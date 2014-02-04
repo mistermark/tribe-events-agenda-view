@@ -1,22 +1,22 @@
 <?php
 /**
- * Agenda View Content Template
- * The content template for the agenda view. This template is also used for
+ * Weekly View Content Template
+ * The content template for the weekly view. This template is also used for
  * the response that is returned on list view ajax requests.
  *
- * Override this template in your own theme by creating a file at [your-theme]/tribe-events/agenda/content.php
+ * Override this template in your own theme by creating a file at [your-theme]/tribe-events/weekly/content.php
  * 
- * @package TribeAgenda
- * @since  1.0
- * @author Modern Tribe Inc.
+ * @package CalendarWeekly
+ * @since  0.1
+ * @author Mark de Jong
  *
  */
 
 if ( !defined('ABSPATH') ) { die('-1'); } ?>
 
-<div id="tribe-events-content" class="tribe-events-list tribe-events-agenda">
+<div id="tribe-events-content" class="tribe-events-list tribe-events-weekly">
 
-	<!-- Agenda Title -->
+	<!-- Weekly Title -->
 	<?php do_action( 'tribe_events_before_the_title' ); ?>
 	<h2 class="tribe-events-page-title"><?php echo tribe_get_events_title() ?></h2>
 	<?php do_action( 'tribe_events_after_the_title' ); ?>
@@ -24,7 +24,7 @@ if ( !defined('ABSPATH') ) { die('-1'); } ?>
 	<!-- Notices -->
 	<?php tribe_events_the_notices() ?>
 
-	<!-- Agenda Header -->
+	<!-- Weekly Header -->
     <?php do_action( 'tribe_events_before_header' ); ?>
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
 	</div><!-- #tribe-events-header -->
@@ -33,11 +33,11 @@ if ( !defined('ABSPATH') ) { die('-1'); } ?>
 	<!-- Events Loop -->
 	<?php if ( have_posts() ) : ?>
 		<?php do_action( 'tribe_events_before_loop' ); ?>
-		<?php tribe_get_template_part( 'agenda/loop' ) ?>
+		<?php tribe_get_template_part( 'weekly/loop' ) ?>
 		<?php do_action( 'tribe_events_after_loop' ); ?>
 	<?php endif; ?>
 
-	<!-- Agenda Footer -->
+	<!-- Weekly Footer -->
 	<?php do_action( 'tribe_events_before_footer' ); ?>
 	<div id="tribe-events-footer">
 

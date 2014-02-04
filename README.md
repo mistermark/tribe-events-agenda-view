@@ -1,9 +1,9 @@
-The Events Calendar: Agenda View
+The Events Calendar: Weekly View
 ======================
 
-This plugin adds an agenda view to your The Event Calendar suite by Modern Tri.be.
+This plugin is a weekly event display for the plugin Events Calendar from Modern Tribe and based on the Agenda View.
 
-We created this plugin as a guideline to help you create fully functional new views for The Events Calendar plugin that get properly integrated with the plugins settings, views, and other important bits. We have tried to include as much useful comments in the code as documentation for creating your own addon plugin and views for The Event Calendar.
+It's supposed to be a good view for displaying weekly events instead of just showing the events as monthly view. Customized to fit my needs, but instead of keeping this for myself I'd rather share it.
 
 #### Installation
 
